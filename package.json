@@ -1,0 +1,12 @@
+{
+  "name": "we-wedding",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/willinglee/we-wedding.git",
+  "author": "William Lee <william93lee@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "gatsby": "^1.9.243",
+    "gatsby-link": "^1.6.40"
+  }
+}
