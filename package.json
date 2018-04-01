@@ -5,6 +5,11 @@
   "repository": "https://github.com/willinglee/we-wedding.git",
   "author": "William Lee <william93lee@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "server": "gatsby serve"
+  },
   "dependencies": {
     "gatsby": "^1.9.243",
     "gatsby-link": "^1.6.40"
