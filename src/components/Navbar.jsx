@@ -13,8 +13,11 @@ export default class Navbar extends React.Component {
   render() {
     const links = [
       { name: 'Home', to: '/' },
-      { name: 'Story', to: '/story' },
-      { name: 'Rsvp', to: '/rsvp' },
+      { name: 'Wedding', to: '/wedding' },
+      { name: 'Travel', to: '/travel' },
+      { name: 'Photos', to: '/photos' },
+      { name: 'Registry', to: '/registry' },
+      { name: 'RSVP', to: '/rsvp' },
     ];
 
     return <nav className="">{this.renderLinks(links)}</nav>;
