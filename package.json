@@ -4,7 +4,6 @@
   "main": "index.js",
   "repository": "https://github.com/willinglee/we-wedding.git",
   "author": "William Lee <william93lee@gmail.com>",
-  "license": "MIT",
   "scripts": {
     "develop": "gatsby develop",
     "build": "gatsby build",
@@ -18,6 +17,7 @@
     "gatsby-plugin-nprogress": "^1.0.14",
     "gatsby-plugin-react-helmet": "^2.0.9",
     "gatsby-plugin-sass": "^1.0.25",
+    "gatsby-transformer-remark": "^1.7.39",
     "react-helmet": "^5.2.0",
     "react-load-script": "^0.0.6",
     "react-typist": "^2.0.4"
