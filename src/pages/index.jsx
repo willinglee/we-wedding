@@ -4,6 +4,7 @@ import Script from 'react-load-script';
 
 export default () => (
   <div>
-    <h1>William and Elizabeth</h1>
+    <img src="https://source.unsplash.com/random/400x200" alt="" />
+    <h1>Come Celebrate Our Wedding</h1>
   </div>
 );

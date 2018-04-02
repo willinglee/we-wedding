@@ -4,7 +4,13 @@ import Link from 'gatsby-link';
 export default class Navbar extends React.Component {
   renderLinks = (links, onClick) => {
     return links.map(link => (
-      <Link key={link.to} to={link.to} title={link.name} onClick={onClick}>
+      <Link
+        className="main-nav__child"
+        key={link.to}
+        to={link.to}
+        title={link.name}
+        onClick={onClick}
+      >
         {link.name}
       </Link>
     ));
@@ -20,6 +26,16 @@ export default class Navbar extends React.Component {
       { name: 'RSVP', to: '/rsvp' },
     ];
 
-    return <nav className="">{this.renderLinks(links)}</nav>;
+    return (
+      <header className="clear">
+        <div className="logo">
+          <h1 className="logo__h1">Will & Elizabeth</h1>
+        </div>
+        <nav className="main-nav">
+          <div className="main-nav__bars">{this.renderLinks(links)}</div>
+          <div className="page-divider" />
+        </nav>
+      </header>
+    );
   }
 }
