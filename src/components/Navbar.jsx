@@ -17,12 +17,6 @@ export default class Navbar extends React.Component {
       { name: 'Rsvp', to: '/rsvp' },
     ];
 
-    return (
-      <div className="grid">
-        <nav className="main-nav -desktop col md-9 md-push-2">
-          {this.renderLinks(links)}
-        </nav>
-      </div>
-    );
+    return <nav className="">{this.renderLinks(links)}</nav>;
   }
 }
