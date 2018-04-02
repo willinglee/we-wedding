@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
+import Navbar from '../components/Navbar';
 
 export default class TemplateWrapper extends React.Component {
   static propTypes = {
@@ -11,7 +12,7 @@ export default class TemplateWrapper extends React.Component {
     const { children } = this.props;
     return (
       <div>
-        <h1>Navbar</h1>
+        <Navbar />
         {children()}
       </div>
     );
