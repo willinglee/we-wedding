@@ -19,6 +19,7 @@
     "gatsby-plugin-react-helmet": "^2.0.9",
     "gatsby-plugin-sass": "^1.0.25",
     "react-helmet": "^5.2.0",
+    "react-load-script": "^0.0.6",
     "react-typist": "^2.0.4"
   }
 }
