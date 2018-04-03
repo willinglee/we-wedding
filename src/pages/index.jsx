@@ -14,6 +14,9 @@ export default () => (
       -&nbsp;<em>and</em>&nbsp;-
     </h3>
     <h1 className="h1">Elizabeth Chun</h1>
+    <div className="separator">
+      <hr />
+    </div>
     <h3 className="h3 h3--uppercase">Saturday, October 6, 2018</h3>
   </section>
 );
