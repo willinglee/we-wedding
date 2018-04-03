@@ -1,7 +1,7 @@
 import React from 'react';
 
 export default () => (
-  <div>
+  <section className="main">
     <h1>Registry</h1>
-  </div>
+  </section>
 );

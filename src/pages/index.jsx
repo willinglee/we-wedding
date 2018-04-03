@@ -3,7 +3,7 @@ import Link from 'gatsby-link';
 import Script from 'react-load-script';
 
 export default () => (
-  <section>
+  <section className="main">
     <img
       className="img"
       src="https://s3.amazonaws.com/wewedding/IMG_5874.JPG"
