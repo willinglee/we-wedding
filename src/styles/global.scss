@@ -142,7 +142,7 @@ section {
 }
 
 .separator {
-  margin: 100px;
+  margin: 50px 100px;
 
   & > hr {
     color: #eee;
@@ -152,4 +152,8 @@ section {
     border-style: none;
     border-width: 0;
   }
+}
+
+.content {
+  margin-top: 75px;
 }

@@ -29,7 +29,7 @@ export default class Navbar extends React.Component {
     return (
       <header className="clear">
         <div className="logo">
-          <h1 className="logo__h1">William & Elizabeth</h1>
+          <h1 className="logo__h1">W&E</h1>
         </div>
         <nav className="main-nav">
           <div className="main-nav__bars">{this.renderLinks(links)}</div>
