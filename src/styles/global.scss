@@ -1,16 +1,23 @@
 body {
+  display: block;
+  margin: 0;
   font-family: $fontDefault;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 400;
   font-style: normal;
   line-height: 1.8em;
   text-transform: none;
-  background: $colorBackground;
+  text-decoration: none;
+  background-color: $colorBackground;
+  color: #222;
 }
 
 .container {
+  background-color: #fff;
   max-width: 100%;
+  margin: 100px;
   padding: 100px 100px 0;
+  border: solid 2px #eee;
 }
 
 header {
@@ -37,6 +44,7 @@ header {
     font-style: normal;
     line-height: 1.2em;
     letter-spacing: 1px;
+    margin: 0;
   }
 }
 
@@ -44,19 +52,19 @@ nav {
   width: 100%;
   text-align: center;
   margin-top: 40px;
+  display: inline-block;
+  line-height: 1.6em;
 }
 
 .main-nav {
-  display: inline-block;
-  line-height: 1.6em;
-
   &__bars {
-    background-color: $colorBackground;
+    background-color: #fff;
     display: inline-block;
     line-height: 1.6em;
     padding: 0 32px;
     font-size: 12px;
     text-transform: uppercase;
+    text-decoration: none;
     letter-spacing: 2px;
     font-weight: 600;
     font-style: normal;
@@ -65,11 +73,14 @@ nav {
       color: rgba(28, 28, 28, 0.7);
       display: inline-block;
       text-decoration: none;
+      border: 2px solid transparent;
 
       &:hover {
+        display: inline-block;
         color: #1c1c1c;
-        border-bottom-color: #eee;
+        border-bottom-style: solid;
         border-bottom-width: 2px;
+        border-bottom-color: #eee;
       }
     }
   }
@@ -88,6 +99,10 @@ nav {
   margin-top: -1.6em;
   margin-bottom: 1.6em;
   font-size: 12px;
-  border-bottom-width: 2px;
-  border-bottom: 1px solid #eee;
+  border-bottom: solid 2px #eee;
+}
+
+section {
+  margin-top: 52px;
+  margin-bottom: 52px;
 }

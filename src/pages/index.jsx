@@ -3,8 +3,8 @@ import Link from 'gatsby-link';
 import Script from 'react-load-script';
 
 export default () => (
-  <div>
+  <section>
     <img src="https://source.unsplash.com/random/400x200" alt="" />
     <h1>Come Celebrate Our Wedding</h1>
-  </div>
+  </section>
 );
