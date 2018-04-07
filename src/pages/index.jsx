@@ -6,7 +6,7 @@ export default () => (
   <section className="main">
     <img
       className="img"
-      src="https://s3.amazonaws.com/wewedding/IMG_5874.JPG"
+      src="https://d2gw80r1s17zo1.cloudfront.net/IMG_5874.JPG"
       alt=""
     />
     <div className="content">
