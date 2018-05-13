@@ -6,8 +6,8 @@ export default () => (
       style={{ marginTop: '50px', width: '55%', margin: '0 auto' }}
       className="h3 h3--lighter"
     >
-      The wedding will be held on Saturday, October 6th, 2018. We'll start with
-      a ceremony, then move to the church reception hall. Dress code will be
+      The wedding will be held on Saturday, October 6, 2018. We'll start with a
+      ceremony, then move to the church reception hall. Dress code will be
       semi-formal attire.
     </h3>
     <div className="separator">
