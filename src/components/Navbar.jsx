@@ -20,10 +20,8 @@ export default class Navbar extends React.Component {
     const links = [
       { name: 'Home', to: '/' },
       { name: 'Wedding', to: '/wedding' },
-      { name: 'Travel', to: '/travel' },
       { name: 'Photos', to: '/photos' },
       { name: 'Registry', to: '/registry' },
-      { name: 'RSVP', to: '/rsvp' },
     ];
 
     return (
