@@ -7,6 +7,7 @@ export default () => (
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
+      width: '100%',
     }}
   >
     <img
@@ -15,7 +16,10 @@ export default () => (
       alt=""
       style={{ maxWidth: '80%' }}
     />
-    <h3 className="h3" style={{ width: '55%', margin: '40px auto' }}>
+    <div className="separator" style={{ width: '80%' }}>
+      <hr />
+    </div>
+    <h3 className="h3" style={{ width: '55%', margin: 'auto' }}>
       We need nothing more than your loving company. But if you must, monetary
       gifts would be most appreciated 🐶
     </h3>
