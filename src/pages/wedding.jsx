@@ -17,7 +17,7 @@ export default () => (
       Wedding Ceremony & Reception
     </h3>
     <h3 className="h3 h3--lighter" style={{ width: '55%', margin: '0 auto' }}>
-      3:30PM
+      4:00PM
     </h3>
   </section>
 );
