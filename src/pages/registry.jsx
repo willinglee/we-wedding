@@ -15,6 +15,11 @@ export default () => (
       gifts would be most appreciated 🐶
     </h3>
     <div className="separator" style={{ width: '80%' }}>
+      <h3 className="h1" style={{ width: '55%', margin: 'auto', textTransform: 'none' }}>
+        <a style={{ textDecoration: 'none', color: 'rgba(28, 28, 28, 0.7)' }} href="http://tgt.gifts/affd3820d3974faabbd40f5aefcaa3e1" target="_blank">Bridal Shower Registry 💅🎉</a>
+      </h3>
+    </div>
+    <div className="separator" style={{ width: '80%' }}>
       <hr />
     </div>
     <img
