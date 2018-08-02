@@ -15,3 +15,31 @@
   display: flex;
   flex-direction: column;
 }
+
+.rsvp-form {
+  color: rgba(28, 28, 28, 0.7);
+  font-family: Helvetica;
+  font-size: 15px;
+}
+
+.rsvp-input {
+  width: 100%;
+  padding: 12px;
+  margin: 6px 0 4px;
+  border: 1px solid #ccc;
+  background: #fafafa;
+  color: #000;
+  font-family: sans-serif;
+  font-size: 12px;
+  line-height: normal;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.rsvp-button {
+  color: #fff;
+  background-color: #272727;
+  border-color: #272727;
+  padding: 14px 35px;
+  font-size: 14px;
+}

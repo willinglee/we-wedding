@@ -30,10 +30,10 @@ export default class Rsvp extends React.Component {
         <div className="separator" style={{ width: '80%' }}>
           <hr />
         </div>
-        <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+        <form className="rsvp-form" name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
           <input type="hidden" name="bot-field" />
 
-          <div className="displayRow">
+          <div className="radioWrapper">
             <div className="">
               <input type="radio" name="accept" id="accept" />
               <label htmlFor="accept">Joyfully Accepts</label>
@@ -47,17 +47,17 @@ export default class Rsvp extends React.Component {
           <div className="displayRow">
             <div className="inputWrapper">
               <label htmlFor="firstName">First Name</label>
-              <input type="text" name="firstName" id="firstName" />
+              <input className="rsvp-input" type="text" name="firstName" id="firstName" />
             </div>
             <div className="inputWrapper">
               <label htmlFor="lastName">Last Name</label>
-              <input type="text" name="lastName" id="lastName" />
+              <input className="rsvp-input" type="text" name="lastName" id="lastName" />
             </div>
           </div>
 
           <div className="inputWrapper">
             <label htmlFor="email">Email</label>
-            <input type="text" name="email" id="email" />
+            <input className="rsvp-input" type="text" name="email" id="email" />
           </div>
 
           <select value={guestCount} onChange={this.handleSelect}>
@@ -74,21 +74,21 @@ export default class Rsvp extends React.Component {
             <div className="displayRow" key={index}>
               <div className="inputWrapper">
                 <label htmlFor="firstName">First Name</label>
-                <input type="text" name="firstName" id="firstName" />
+                <input className="rsvp-input" type="text" name="firstName" id="firstName" />
               </div>
               <div className="inputWrapper">
                 <label htmlFor="lastName">Last Name</label>
-                <input type="text" name="lastName" id="lastName" />
+                <input className="rsvp-input" type="text" name="lastName" id="lastName" />
               </div>
             </div>
           ))}
 
           <div className="comments">
             <label htmlFor="message">Comments: Please let us know any dietary restrictions!</label>
-            <textarea name="message" id="message" rows="3"></textarea>
+            <textarea className="rsvp-input" name="message" id="message" rows="3"></textarea>
           </div>
 
-          <button type="submit">Send</button>
+          <button className="rsvp-button" type="submit">RSVP</button>
         </form>
       </section>
     );
