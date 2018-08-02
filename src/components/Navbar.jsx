@@ -22,6 +22,7 @@ export default class Navbar extends React.Component {
       { name: 'Wedding', to: '/wedding' },
       { name: 'Photos', to: '/photos' },
       { name: 'Registry', to: '/registry' },
+      { name: 'RSVP', to: '/rsvp' },
     ];
 
     return (
