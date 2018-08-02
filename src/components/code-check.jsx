@@ -11,7 +11,10 @@ export default class CodeCheck extends React.Component {
 
     return (
       <React.Fragment>
-        <input />
+        <form>
+          <input />
+          <button>Open</button>
+        </form>
         {children}
       </React.Fragment>
     );
