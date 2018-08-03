@@ -13,12 +13,13 @@ export default class TemplateWrapper extends React.Component {
   render() {
     const { children } = this.props;
     return (
-      <div className="container">
-        <CodeCheck>
+      <CodeCheck render={() => (
+        <div className="container">
           <Navbar />
           {children()}
-        </CodeCheck>
-      </div>
+        </div>
+      )}>
+      </CodeCheck>
     );
   }
 }

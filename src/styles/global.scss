@@ -173,3 +173,32 @@ section {
 .content {
   margin-top: 20px;
 }
+
+.welcome-container {
+  background-color: #fff;
+  max-width: 800px;
+  margin: 100px auto;
+  padding: 0 100px;
+  border: solid 2px #eee;  
+}
+
+.welcome-input {
+  background: #FFFFFF;
+  border: 1px solid #DBDBDB;
+  border-radius: 8px;
+  font-size: 16px;
+  height: 44px;
+  padding: 10px 55px;
+  width: 100%;
+}
+
+
+.welcome-input::placeholder {
+  color: #8d8ca0;
+  opacity: 1;
+}
+
+.welcome-input:focus {
+  outline: none;
+  border-color: rgba(28, 28, 28, 0.7);
+}
