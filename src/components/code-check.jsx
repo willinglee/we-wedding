@@ -32,7 +32,7 @@ export default class CodeCheck extends React.Component {
       <React.Fragment>
         {isChecked ?
           <section className="main">
-            this.props.render()
+            {this.props.render()}
           </section> :
           <div className="welcome-container">
             <section className="main" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
