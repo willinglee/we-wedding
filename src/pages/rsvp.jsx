@@ -25,7 +25,7 @@ export default class Rsvp extends React.Component {
         }}
       >
         <h3 className="h3" style={{ width: '55%', margin: 'auto' }}>
-          PLEASE RESPOND BY SEPTEMBER 8, 2018
+          Please Respond By September 8, 2018
         </h3>
         <div className="separator" style={{ width: '80%' }}>
           <hr />
