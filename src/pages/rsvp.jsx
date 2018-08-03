@@ -34,29 +34,29 @@ export default class Rsvp extends React.Component {
           <input type="hidden" name="bot-field" />
 
           <div className="radioWrapper">
-            <div className="">
+            <div className="rsvp-radio">
               <input type="radio" name="accept" id="accept" />
               <label htmlFor="accept">Joyfully Accepts</label>
             </div>
-            <div className="">
+            <div className="rsvp-radio">
               <input type="radio" name="decline" id="decline" />
               <label htmlFor="decline">Regretfully Declines</label>
             </div>
           </div>
 
           <div className="displayRow">
-            <div className="inputWrapper">
-              <label htmlFor="firstName">First Name</label>
+            <div className="inputWrapper" style={{ marginRight: '10px' }}>
+              <label htmlFor="firstName">First Name *</label>
               <input className="rsvp-input" type="text" name="firstName" id="firstName" />
             </div>
             <div className="inputWrapper">
-              <label htmlFor="lastName">Last Name</label>
+              <label htmlFor="lastName">Last Name *</label>
               <input className="rsvp-input" type="text" name="lastName" id="lastName" />
             </div>
           </div>
 
           <div className="inputWrapper">
-            <label htmlFor="email">Email</label>
+            <label htmlFor="email">Email *</label>
             <input className="rsvp-input" type="text" name="email" id="email" />
           </div>
 
@@ -72,23 +72,25 @@ export default class Rsvp extends React.Component {
 
           {greaterThan0 && guests.map((guest, index) => (
             <div className="displayRow" key={index}>
-              <div className="inputWrapper">
-                <label htmlFor="firstName">First Name</label>
+              <div className="inputWrapper" style={{ marginRight: '10px' }}>
+                <label htmlFor="firstName">First Name *</label>
                 <input className="rsvp-input" type="text" name="firstName" id="firstName" />
               </div>
               <div className="inputWrapper">
-                <label htmlFor="lastName">Last Name</label>
+                <label htmlFor="lastName">Last Name *</label>
                 <input className="rsvp-input" type="text" name="lastName" id="lastName" />
               </div>
             </div>
           ))}
 
-          <div className="comments">
+          <div className="inputWrapper">
             <label htmlFor="message">Comments: Please let us know any dietary restrictions!</label>
             <textarea className="rsvp-input" name="message" id="message" rows="3"></textarea>
           </div>
-
-          <button className="rsvp-button" type="submit">RSVP</button>
+          
+          <div className="rsvp-button-wrapper">
+            <button className="rsvp-button" type="submit">RSVP</button>
+          </div>
         </form>
       </section>
     );
