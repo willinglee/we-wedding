@@ -29,11 +29,13 @@ export default class CodeCheck extends React.Component {
     const { code, isChecked } = this.state;
 
     return (
-      <div className="welcome-container">
-        <section className="main" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-          {isChecked ?
-            this.props.render() :
-            <React.Fragment>
+      <React.Fragment>
+        {isChecked ?
+          <section className="main">
+            this.props.render()
+          </section> :
+          <div className="welcome-container">
+            <section className="main" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
               <img style={{ maxWidth: '50%', maxHeight: '50%' }} src="https://s3.amazonaws.com/wewedding/wedding-title.png" />
               <form style={{ marginTop: '20px' }}>
                 <input className="rsvp-input" onChange={this.handleChange} value={code} />
@@ -41,10 +43,10 @@ export default class CodeCheck extends React.Component {
                   <button className="rsvp-button" onClick={this.handleCheck}>Open</button>
                 </div>
               </form>
-            </React.Fragment>
-          }
-        </section>
-      </div>
+            </section>
+          </div>
+        }
+      </React.Fragment>
     );
   }
 }
