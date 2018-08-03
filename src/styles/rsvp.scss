@@ -5,6 +5,7 @@
 
 .radioWrapper {
   display: flex;
+  margin: 20px 0;
 }
 
 .rsvp-radio {
@@ -15,10 +16,36 @@
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin: 10px 0;
+}
+
+.guests-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.guests-container {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
 }
 
 .guests {
   display: flex;
+}
+
+.guests-label {
+  margin-right: 20px;
+}
+
+.guests-select {
+  display: flex;
+  outline: 0;
+  cursor: pointer;
+  height: 40px;
+  width: 50px;
+  padding: 0 12px;
+  text-align: center;
 }
 
 .rsvp-form {
@@ -27,7 +54,7 @@
   font-size: 16px;
   display: flex;
   flex-direction: column;
-  height: 600px;
+  height: 100%;
   justify-content: space-between;
   width: 400px;
 }

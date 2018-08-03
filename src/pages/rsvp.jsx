@@ -60,28 +60,32 @@ export default class Rsvp extends React.Component {
             <input className="rsvp-input" type="text" name="email" id="email" />
           </div>
 
-          <select value={guestCount} onChange={this.handleSelect}>
-            <option value="0">0</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6</option>
-          </select>
-
-          {greaterThan0 && guests.map((guest, index) => (
-            <div className="displayRow" key={index}>
-              <div className="inputWrapper" style={{ marginRight: '10px' }}>
-                <label htmlFor="firstName">First Name *</label>
-                <input className="rsvp-input" type="text" name="firstName" id="firstName" />
-              </div>
-              <div className="inputWrapper">
-                <label htmlFor="lastName">Last Name *</label>
-                <input className="rsvp-input" type="text" name="lastName" id="lastName" />
-              </div>
+          <div className="guests-wrapper">
+            <div className="guests-container">
+              <label className="guests-label">Additional Guests</label>
+              <select className="guests-select" value={guestCount} onChange={this.handleSelect}>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+              </select>
             </div>
-          ))}
+            {greaterThan0 && guests.map((guest, index) => (
+              <div className="displayRow" key={index} style={{ marginBottom: '30px' }}>
+                <div className="inputWrapper" style={{ marginRight: '10px' }}>
+                  <label htmlFor="firstName">First Name *</label>
+                  <input className="rsvp-input" type="text" name="firstName" id="firstName" />
+                </div>
+                <div className="inputWrapper">
+                  <label htmlFor="lastName">Last Name *</label>
+                  <input className="rsvp-input" type="text" name="lastName" id="lastName" />
+                </div>
+              </div>
+            ))}
+          </div>
 
           <div className="inputWrapper">
             <label htmlFor="message">Comments: Please let us know any dietary restrictions!</label>
