@@ -28,7 +28,7 @@ export default class Navbar extends React.Component {
     return (
       <header className="clear">
         <div className="logo">
-          <h1 className="logo__h1">William & Elizabeth</h1>
+          <img style={{ maxWidth: '30%', maxHeight: '30%' }} src="https://s3.amazonaws.com/wewedding/wedding-title.png" />
         </div>
         <nav className="main-nav">
           <div className="main-nav__bars">{this.renderLinks(links)}</div>
