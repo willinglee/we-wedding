@@ -24,14 +24,14 @@ export default class Rsvp extends React.Component {
           width: '100%',
         }}
       >
-        {/* <h3 className="h3" style={{ width: '55%', margin: 'auto' }}>
+        <h3 className="h3" style={{ width: '55%', margin: 'auto' }}>
           Please Respond By September 8, 2018
-        </h3> */}
+        </h3>
         <div className="separator" style={{ width: '80%' }}>
           <hr />
         </div>
-        {/* <form className="rsvp-form" name="contact" method="post" netlify>
-          <input type="hidden" name="contact" value="contact" />  
+        <form className="rsvp-form" name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact" />  
 
           <div className="radioWrapper">
             <div className="rsvp-radio">
@@ -95,11 +95,6 @@ export default class Rsvp extends React.Component {
           <div className="rsvp-button-wrapper">
             <button className="rsvp-button" type="submit">RSVP</button>
           </div>
-        </form> */}
-        <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
-          <input type="hidden" name="form-name" value="contact" />
-          <input type="email" name="email" />
-          <button className="rsvp-button" type="submit">RSVP</button>
         </form>
       </section>
     );
