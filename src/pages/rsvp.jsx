@@ -30,7 +30,7 @@ export default class Rsvp extends React.Component {
         <div className="separator" style={{ width: '80%' }}>
           <hr />
         </div>
-        <form className="rsvp-form" name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+        <form className="rsvp-form" name="contact" method="post" netlify>
           <div className="radioWrapper">
             <div className="rsvp-radio">
               <input type="radio" name="accept" id="accept" />
