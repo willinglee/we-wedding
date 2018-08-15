@@ -31,6 +31,8 @@ export default class Rsvp extends React.Component {
           <hr />
         </div>
         <form className="rsvp-form" name="contact" method="post" netlify>
+          <input type="hidden" name="contact" value="contact" />  
+
           <div className="radioWrapper">
             <div className="rsvp-radio">
               <input type="radio" name="accept" id="accept" />
