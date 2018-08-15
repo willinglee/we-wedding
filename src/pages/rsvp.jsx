@@ -24,7 +24,7 @@ export default class Rsvp extends React.Component {
           width: '100%',
         }}
       >
-        <h3 className="h3" style={{ width: '55%', margin: 'auto' }}>
+        {/* <h3 className="h3" style={{ width: '55%', margin: 'auto' }}>
           Please Respond By September 8, 2018
         </h3>
         <div className="separator" style={{ width: '80%' }}>
@@ -95,7 +95,7 @@ export default class Rsvp extends React.Component {
           <div className="rsvp-button-wrapper">
             <button className="rsvp-button" type="submit">RSVP</button>
           </div>
-        </form>
+        </form> */}
       </section>
     );
   }
