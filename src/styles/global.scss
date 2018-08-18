@@ -168,6 +168,18 @@ section {
   }
 }
 
+.imageContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.imageRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+
 .modal {
   display: flex; /* Hidden by default */
   align-items: center;

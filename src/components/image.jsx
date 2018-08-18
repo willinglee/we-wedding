@@ -38,7 +38,7 @@ export default class Image extends React.Component {
           className="img"
           src={this.props.image}
           alt=""
-          width="50%"
+          width={this.props.width}
           onClick={this.handleClick}
         />
       }
