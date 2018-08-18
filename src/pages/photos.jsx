@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from '../components/image';
 import images from './images/get-images';
 
 export default () => (
@@ -11,13 +12,7 @@ export default () => (
     </h3>
     {
       images.map((image, index) => (
-        <img
-          className="img"
-          src={image}
-          alt=""
-          key={index}
-          width="50%"
-        />
+        <Image image={image} key={index} />
       ))
     }
   </section>
