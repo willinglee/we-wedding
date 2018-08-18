@@ -21,7 +21,6 @@ export default class Image extends React.Component {
 
   render() {
     const { isModal } = this.state;
-    console.log(isModal);
     return (
       <React.Fragment>
       {
@@ -31,7 +30,6 @@ export default class Image extends React.Component {
             className="modal-content"
             src={this.props.image}
             alt=""
-            width="50%"
           />
         </div> :
         <img

@@ -186,7 +186,6 @@ section {
   justify-content: center;
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -195,6 +194,11 @@ section {
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
   margin: 0 auto;
+
+  &-content {
+    max-width: 100%;
+    max-height: 80%;  
+  }
 }
 
 .separator {
