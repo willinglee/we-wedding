@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import Script from 'react-load-script';
-import mainImage from './liz_will_engagement_0122.jpg';
+import mainImage from './liz_will_engagement_0129.jpg';
 
 export default () => (
   <section className="main">
