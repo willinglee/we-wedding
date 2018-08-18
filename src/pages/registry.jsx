@@ -1,5 +1,5 @@
 import React from 'react';
-import image from './liz_will_engagement_0143.jpg';
+import image from '../images/liz_will_engagement_0143.jpg';
 
 export default () => (
   <section

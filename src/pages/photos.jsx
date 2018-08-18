@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from '../components/image';
-import images from './images/get-images';
+import images from '../images/photos/get-images';
 
 export default () => (
   <section className="main">
