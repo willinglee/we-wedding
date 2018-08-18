@@ -1,9 +1,15 @@
 import React from 'react';
+import image from './images/liz_will_engagement_0129.jpg';
 
 export default () => (
   <section className="main">
+    <img
+      className="img"
+      src={image}
+      alt=""
+    />
     <h3
-      style={{ marginTop: '50px', width: '55%', margin: '0 auto' }}
+      style={{ margin: '50px auto', width: '55%' }}
       className="h3 h3--lighter"
     >
       The wedding will be held on Saturday, October 6, 2018. We'll start with a

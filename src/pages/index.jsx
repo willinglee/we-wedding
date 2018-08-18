@@ -1,12 +1,13 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import Script from 'react-load-script';
+import mainImage from './images/liz_will_engagement_0122.jpg';
 
 export default () => (
   <section className="main">
     <img
       className="img"
-      src="https://d2gw80r1s17zo1.cloudfront.net/IMG_5874.JPG"
+      src={mainImage}
       alt=""
     />
     <h3 style={{ marginTop: '50px' }} className="h3 h3--uppercase h3--lighter">
