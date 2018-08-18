@@ -10,12 +10,13 @@ export default () => (
       Thanks to <a style={{ textDecoration: 'none', color: '#222' }} href="https://michaelryu.pic-time.com/portfolio" target="_blank">Michael Ryu</a> for taking our beautiful engagement photos!
     </h3>
     {
-      images.map(image => (
+      images.map((image, index) => (
         <img
           className="img"
           src={image}
           alt=""
-          key={images}
+          key={index}
+          width="50%"
         />
       ))
     }
