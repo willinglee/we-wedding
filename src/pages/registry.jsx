@@ -18,7 +18,7 @@ export default () => (
       But, if you would like to contribute towards our honeymoon fund, we've set up a registry below.
     </h3>
     <div className="rsvp-button-wrapper">
-      <button className="rsvp-button" style={{ fontSize: '16px' }}>Our Honeymoon Fund 🐶</button>
+      <button className="rsvp-button" style={{ fontSize: '16px' }} onClick={() => window.open('https://www.travelersjoy.com/weleewedding/', '_blank')}>Our Honeymoon Fund 🐶</button>
     </div>
   </section>
 );
