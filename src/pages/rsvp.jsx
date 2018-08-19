@@ -39,9 +39,24 @@ export default class Rsvp extends React.Component {
   }
 
   render() {
+    let guestClassName1, guestClassName2, guestClassName3, guestClassName4, guestClassName5, guestClassName6;
     const { guestCount } = this.state;
-    const greaterThan0 = guestCount > 0;
-    const guests = new Array(guestCount).fill(1);
+    if (guestCount === 0) {
+      guestClassName1 = 'displayRow--none';
+      guestClassName2 = 'displayRow--none';
+      guestClassName3 = 'displayRow--none';
+      guestClassName4 = 'displayRow--none';
+      guestClassName5 = 'displayRow--none';
+      guestClassName6 = 'displayRow--none';
+    }
+    if (guestCount === 1) {
+      guestClassName1 = 'displayRow';
+      guestClassName2 = 'displayRow--none';
+      guestClassName3 = 'displayRow--none';
+      guestClassName4 = 'displayRow--none';
+      guestClassName5 = 'displayRow--none';
+      guestClassName6 = 'displayRow--none';
+    }
 
     return (
       <section
@@ -102,18 +117,73 @@ export default class Rsvp extends React.Component {
                 <option value="6">6</option>
               </select>
             </div>
-            {greaterThan0 && guests.map((guest, index) => (
-              <div className="displayRow" key={index} style={{ marginBottom: '30px' }}>
-                <div className="inputWrapper" style={{ marginRight: '10px' }}>
-                  <label htmlFor="guestFirstName">Guest First Name *</label>
-                  <input className="rsvp-input" type="text" name="guestFirstName" onChange={this.handleChange} />
-                </div>
-                <div className="inputWrapper">
-                  <label htmlFor="lastNameGuest">Guest Last Name *</label>
-                  <input className="rsvp-input" type="text" name={`guestLastName-${index}`} onChange={this.handleChange} />
-                </div>
+
+            <div className={guestClassName1} style={{ marginBottom: '30px' }}>
+              <div className="inputWrapper" style={{ marginRight: '10px' }}>
+                <label htmlFor="firstNameGuest">Guest First Name *</label>
+                <input className="rsvp-input" type="text" name="guestFirstName-One" onChange={this.handleChange} />
               </div>
-            ))}
+              <div className="inputWrapper">
+                <label htmlFor="lastNameGuest">Guest Last Name *</label>
+                <input className="rsvp-input" type="text" name="guestLastName-One" onChange={this.handleChange} />
+              </div>
+            </div>
+
+            <div className={guestClassName2} style={{ marginBottom: '30px' }}>
+              <div className="inputWrapper" style={{ marginRight: '10px' }}>
+                <label htmlFor="firstNameGuest">Guest First Name *</label>
+                <input className="rsvp-input" type="text" name="guestFirstName-Two" onChange={this.handleChange} />
+              </div>
+              <div className="inputWrapper">
+                <label htmlFor="lastNameGuest">Guest Last Name *</label>
+                <input className="rsvp-input" type="text" name="guestLastName-Two" onChange={this.handleChange} />
+              </div>
+            </div>
+
+            <div className={guestClassName3} style={{ marginBottom: '30px' }}>
+              <div className="inputWrapper" style={{ marginRight: '10px' }}>
+                <label htmlFor="firstNameGuest">Guest First Name *</label>
+                <input className="rsvp-input" type="text" name="guestFirstName-Three" onChange={this.handleChange} />
+              </div>
+              <div className="inputWrapper">
+                <label htmlFor="lastNameGuest">Guest Last Name *</label>
+                <input className="rsvp-input" type="text" name="guestLastName-Three" onChange={this.handleChange} />
+              </div>
+            </div>
+
+            <div className={guestClassName4} style={{ marginBottom: '30px' }}>
+              <div className="inputWrapper" style={{ marginRight: '10px' }}>
+                <label htmlFor="firstNameGuest">Guest First Name *</label>
+                <input className="rsvp-input" type="text" name="guestFirstName-Four" onChange={this.handleChange} />
+              </div>
+              <div className="inputWrapper">
+                <label htmlFor="lastNameGuest">Guest Last Name *</label>
+                <input className="rsvp-input" type="text" name="guestLastName-Four" onChange={this.handleChange} />
+              </div>
+            </div>
+
+            <div className={guestClassName5} style={{ marginBottom: '30px' }}>
+              <div className="inputWrapper" style={{ marginRight: '10px' }}>
+                <label htmlFor="firstNameGuest">Guest First Name *</label>
+                <input className="rsvp-input" type="text" name="guestFirstName-Five" onChange={this.handleChange} />
+              </div>
+              <div className="inputWrapper">
+                <label htmlFor="lastNameGuest">Guest Last Name *</label>
+                <input className="rsvp-input" type="text" name="guestLastName-Five" onChange={this.handleChange} />
+              </div>
+            </div>
+
+            <div className={guestClassName6} style={{ marginBottom: '30px' }}>
+              <div className="inputWrapper" style={{ marginRight: '10px' }}>
+                <label htmlFor="firstNameGuest">Guest First Name *</label>
+                <input className="rsvp-input" type="text" name="guestFirstName-Six" onChange={this.handleChange} />
+              </div>
+              <div className="inputWrapper">
+                <label htmlFor="lastNameGuest">Guest Last Name *</label>
+                <input className="rsvp-input" type="text" name="guestLastName-Six" onChange={this.handleChange} />
+              </div>
+            </div>
+
           </div>
 
           <div className="inputWrapper">
