@@ -4,7 +4,9 @@ import Link from 'gatsby-link';
 export default class Navbar extends React.Component {
   renderLinks = (links) => {
     return links.map(link => {
-      const className = window.location.pathname === link.to ? 'main-nav__child-selected' : 'main-nav__child';
+      const windowGlobal = typeof window !== 'undefined' && window
+
+      const className = windowGlobal.location.pathname === link.to ? 'main-nav__child-selected' : 'main-nav__child';
       return (
         <Link
           className={className}
