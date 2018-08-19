@@ -13,9 +13,12 @@ export default () => (
     }}
   >
     <Image image={imageSrc} width="100%" />
-    <h3 className="h3" style={{ width: '55%', margin: '50px auto' }}>
-      We need nothing more than your loving company. But if you must, monetary
-      gifts would be most appreciated 🐶
+    <h3 className="h3" style={{ width: '55%', margin: '50px auto 30px' }}>
+      We need nothing more than your loving company.
+      But, if you would like to contribute towards our honeymoon fund, we've set up a registry below.
     </h3>
+    <div className="rsvp-button-wrapper">
+      <button className="rsvp-button" style={{ fontSize: '16px' }}>Our Honeymoon Fund 🐶</button>
+    </div>
   </section>
 );

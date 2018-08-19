@@ -1,12 +1,39 @@
 import React from 'react';
+import { navigateTo } from 'gatsby-link';
 
 export default class Rsvp extends React.Component {
   state = {
     guestCount: 0,
+    email: '',
+    firstName: '',
+    lastName: '',
   }
 
-  handleSelect = (event) => {
-    this.setState({ guestCount: Number(event.target.value) });
+  encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+        .join('&');
+  }
+
+  handleSelect = (e) => {
+    this.setState({ guestCount: Number(e.target.value) });
+  }
+
+  handleChange = (e) => {
+    this.setState({ [e.target.name]: e.target.value });
+  }
+
+  handleSubmit = (e) => {
+    e.preventDefault();
+
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: this.encode({ 'form-name': 'contact', ...this.state })
+    })
+    .then(() => navigateTo('/thanks/'))
+    .catch(error => alert(error));
+
   }
 
   render() {
@@ -30,16 +57,16 @@ export default class Rsvp extends React.Component {
         <div className="separator" style={{ width: '80%' }}>
           <hr />
         </div>
-        <form className="rsvp-form" name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+        <form className="rsvp-form" name="contact" method="post" action="/thanks/" data-netlify="true" data-netlify-honeypot="bot-field" onSubmit={this.handleSubmit}>
           <input type="hidden" name="form-name" value="contact" />  
 
           <div className="radioWrapper">
             <div className="rsvp-radio">
-              <input type="radio" name="accept" id="accept" />
+              <input type="radio" name="accept" id="accept" onChange={this.handleChange} />
               <label htmlFor="accept">Joyfully Accepts</label>
             </div>
             <div className="rsvp-radio">
-              <input type="radio" name="decline" id="decline" />
+              <input type="radio" name="decline" id="decline" onChange={this.handleChange} />
               <label htmlFor="decline">Regretfully Declines</label>
             </div>
           </div>
@@ -47,17 +74,17 @@ export default class Rsvp extends React.Component {
           <div className="displayRow">
             <div className="inputWrapper" style={{ marginRight: '10px' }}>
               <label htmlFor="firstName">First Name *</label>
-              <input className="rsvp-input" type="text" name="firstName" id="firstName" />
+              <input className="rsvp-input" type="text" name="firstName" onChange={this.handleChange} />
             </div>
             <div className="inputWrapper">
               <label htmlFor="lastName">Last Name *</label>
-              <input className="rsvp-input" type="text" name="lastName" id="lastName" />
+              <input className="rsvp-input" type="text" name="lastName" onChange={this.handleChange} />
             </div>
           </div>
 
           <div className="inputWrapper">
             <label htmlFor="email">Email *</label>
-            <input className="rsvp-input" type="text" name="email" id="email" />
+            <input className="rsvp-input" type="text" name="email" onChange={this.handleChange} />
           </div>
 
           <div className="guests-wrapper">
@@ -77,19 +104,24 @@ export default class Rsvp extends React.Component {
               <div className="displayRow" key={index} style={{ marginBottom: '30px' }}>
                 <div className="inputWrapper" style={{ marginRight: '10px' }}>
                   <label htmlFor="firstNameGuest">Guest First Name *</label>
-                  <input className="rsvp-input" type="text" name="firstNameGuest" id="firstNameGuest" />
+                  <input className="rsvp-input" type="text" name={`${index}-guestFirstName`} onChange={this.handleChange} />
                 </div>
                 <div className="inputWrapper">
                   <label htmlFor="lastNameGuest">Guest Last Name *</label>
-                  <input className="rsvp-input" type="text" name="lastNameGuest" id="lastNameGuest" />
+                  <input className="rsvp-input" type="text" name={`${index}-guestLastName`} onChange={this.handleChange} />
                 </div>
               </div>
             ))}
           </div>
 
           <div className="inputWrapper">
+            <label htmlFor="song">I promise to dance if you play:</label>
+            <input className="rsvp-input" type="text" name="song" onChange={this.handleChange} />
+          </div>
+
+          <div className="inputWrapper">
             <label htmlFor="message">Comments: Please let us know any dietary restrictions!</label>
-            <textarea className="rsvp-input" name="message" id="message" rows="3"></textarea>
+            <textarea className="rsvp-input" name="message" rows="3" onChange={this.handleChange}></textarea>
           </div>
           
           <div className="rsvp-button-wrapper">
