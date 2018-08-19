@@ -111,6 +111,16 @@ nav {
     margin-left: 24px;
     margin-right: 24px;
   }
+
+  &__child-selected {
+    display: inline-block;
+    line-height: 1.6em;
+    float: left;
+    position: relative;
+    margin-left: 24px;
+    margin-right: 24px;
+    color: #1c1c1c !important;
+  }
 }
 
 .page-divider {
