@@ -1,5 +1,6 @@
 import React from 'react';
-import image from '../images/liz_will_engagement_0143.jpg';
+import imageSrc from '../images/liz_will_engagement_0143.jpg';
+import Image from '../components/image';
 
 export default () => (
   <section
@@ -11,11 +12,7 @@ export default () => (
       width: '100%',
     }}
   >
-    <img
-      className="img"
-      src={image}
-      alt=""
-    />
+    <Image image={imageSrc} width="100%" />
     <h3 className="h3" style={{ width: '55%', margin: '50px auto' }}>
       We need nothing more than your loving company. But if you must, monetary
       gifts would be most appreciated 🐶

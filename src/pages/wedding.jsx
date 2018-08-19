@@ -1,13 +1,10 @@
 import React from 'react';
-import image from '../images/liz_will_engagement_0122.jpg';
+import imageSrc from '../images/liz_will_engagement_0122.jpg';
+import Image from '../components/image';
 
 export default () => (
   <section className="main">
-    <img
-      className="img"
-      src={image}
-      alt=""
-    />
+    <Image image={imageSrc} width="100%" />
     <h3
       style={{ margin: '50px auto', width: '55%' }}
       className="h3 h3--lighter"

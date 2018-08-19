@@ -1,15 +1,12 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import Script from 'react-load-script';
-import mainImage from '../images/liz_will_engagement_0129.jpg';
+import imageSrc from '../images/liz_will_engagement_0129.jpg';
+import Image from '../components/image';
 
 export default () => (
   <section className="main">
-    <img
-      className="img"
-      src={mainImage}
-      alt=""
-    />
+    <Image image={imageSrc} width="100%" />
     <h3 style={{ marginTop: '50px' }} className="h3 h3--uppercase h3--lighter">
       Come Celebrate Our Wedding
     </h3>
