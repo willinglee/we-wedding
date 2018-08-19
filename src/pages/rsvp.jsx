@@ -24,7 +24,7 @@ export default class Rsvp extends React.Component {
           width: '100%',
         }}
       >
-        {/* <h3 className="h3" style={{ width: '55%', margin: 'auto' }}>
+        <h3 className="h3" style={{ width: '55%', margin: 'auto' }}>
           Please Respond By September 8, 2018
         </h3>
         <div className="separator" style={{ width: '80%' }}>
@@ -77,11 +77,11 @@ export default class Rsvp extends React.Component {
               <div className="displayRow" key={index} style={{ marginBottom: '30px' }}>
                 <div className="inputWrapper" style={{ marginRight: '10px' }}>
                   <label htmlFor="firstName">First Name *</label>
-                  <input className="rsvp-input" type="text" name="firstName" id="firstName" />
+                  <input className="rsvp-input" type="text" name={`${index}-firstName`} id="firstName" />
                 </div>
                 <div className="inputWrapper">
                   <label htmlFor="lastName">Last Name *</label>
-                  <input className="rsvp-input" type="text" name="lastName" id="lastName" />
+                  <input className="rsvp-input" type="text" name={`${index}-lastName`} id="lastName" />
                 </div>
               </div>
             ))}
@@ -95,7 +95,7 @@ export default class Rsvp extends React.Component {
           <div className="rsvp-button-wrapper">
             <button className="rsvp-button" type="submit">RSVP</button>
           </div>
-        </form> */}
+        </form>
       </section>
     );
   }
