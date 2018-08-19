@@ -26,6 +26,8 @@ export default class Rsvp extends React.Component {
   handleSubmit = (e) => {
     e.preventDefault();
 
+    console.log(this.state);
+
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -104,11 +106,11 @@ export default class Rsvp extends React.Component {
               <div className="displayRow" key={index} style={{ marginBottom: '30px' }}>
                 <div className="inputWrapper" style={{ marginRight: '10px' }}>
                   <label htmlFor="firstNameGuest">Guest First Name *</label>
-                  <input className="rsvp-input" type="text" name={`${index}-guestFirstName`} onChange={this.handleChange} />
+                  <input className="rsvp-input" type="text" name={`guestFirstName`} onChange={this.handleChange} />
                 </div>
                 <div className="inputWrapper">
                   <label htmlFor="lastNameGuest">Guest Last Name *</label>
-                  <input className="rsvp-input" type="text" name={`${index}-guestLastName`} onChange={this.handleChange} />
+                  <input className="rsvp-input" type="text" name={`guestLastName-${index}`} onChange={this.handleChange} />
                 </div>
               </div>
             ))}
