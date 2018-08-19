@@ -3,21 +3,16 @@ import Link from 'gatsby-link';
 
 export default class Navbar extends React.Component {
   renderLinks = (links) => {
-    return links.map(link => {
-      const windowGlobal = typeof window !== 'undefined' && window
-
-      const className = windowGlobal.location.pathname === link.to ? 'main-nav__child-selected' : 'main-nav__child';
-      return (
-        <Link
-          className={className}
-          key={link.to}
-          to={link.to}
-          title={link.name}
-        >
-          {link.name}
-        </Link>
-      );
-    });
+    return links.map(link => (
+      <Link
+        className="main-nav__child"
+        key={link.to}
+        to={link.to}
+        title={link.name}
+      >
+        {link.name}
+      </Link>
+    ));
   };
 
   render() {
