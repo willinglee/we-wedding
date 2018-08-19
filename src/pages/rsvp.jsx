@@ -76,11 +76,11 @@ export default class Rsvp extends React.Component {
             {greaterThan0 && guests.map((guest, index) => (
               <div className="displayRow" key={index} style={{ marginBottom: '30px' }}>
                 <div className="inputWrapper" style={{ marginRight: '10px' }}>
-                  <label htmlFor="firstNameGuest">First Name *</label>
+                  <label htmlFor="firstNameGuest">Guest First Name *</label>
                   <input className="rsvp-input" type="text" name="firstNameGuest" id="firstNameGuest" />
                 </div>
                 <div className="inputWrapper">
-                  <label htmlFor="lastNameGuest">Last Name *</label>
+                  <label htmlFor="lastNameGuest">Guest Last Name *</label>
                   <input className="rsvp-input" type="text" name="lastNameGuest" id="lastNameGuest" />
                 </div>
               </div>
