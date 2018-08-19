@@ -57,6 +57,46 @@ export default class Rsvp extends React.Component {
       guestClassName5 = 'displayRow--none';
       guestClassName6 = 'displayRow--none';
     }
+    if (guestCount === 2) {
+      guestClassName1 = 'displayRow--none';
+      guestClassName2 = 'displayRow';
+      guestClassName3 = 'displayRow--none';
+      guestClassName4 = 'displayRow--none';
+      guestClassName5 = 'displayRow--none';
+      guestClassName6 = 'displayRow--none';
+    }
+    if (guestCount === 3) {
+      guestClassName1 = 'displayRow--none';
+      guestClassName2 = 'displayRow--none';
+      guestClassName3 = 'displayRow';
+      guestClassName4 = 'displayRow--none';
+      guestClassName5 = 'displayRow--none';
+      guestClassName6 = 'displayRow--none';
+    }
+    if (guestCount === 4) {
+      guestClassName1 = 'displayRow--none';
+      guestClassName2 = 'displayRow--none';
+      guestClassName3 = 'displayRow--none';
+      guestClassName4 = 'displayRow';
+      guestClassName5 = 'displayRow--none';
+      guestClassName6 = 'displayRow--none';
+    }
+    if (guestCount === 5) {
+      guestClassName1 = 'displayRow--none';
+      guestClassName2 = 'displayRow--none';
+      guestClassName3 = 'displayRow--none';
+      guestClassName4 = 'displayRow--none';
+      guestClassName5 = 'displayRow';
+      guestClassName6 = 'displayRow--none';
+    }
+    if (guestCount === 6) {
+      guestClassName1 = 'displayRow--none';
+      guestClassName2 = 'displayRow--none';
+      guestClassName3 = 'displayRow--none';
+      guestClassName4 = 'displayRow--none';
+      guestClassName5 = 'displayRow--none';
+      guestClassName6 = 'displayRow';
+    }
 
     return (
       <section
