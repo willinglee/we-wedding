@@ -16,17 +16,17 @@ export default () => (
     <div className="separator" style={{ margin: '10px 100px' }}>
       <hr />
     </div>
-    <h3 className="h3" style={{ width: '55%', margin: '30px auto 0 auto' }}>
+    <h3 className="h3" style={{ width: '55%', margin: '20px auto 0 auto' }}>
+      Wedding Ceremony & Reception
+    </h3>
+    <h3 className="h3 h3--lighter" style={{ width: '55%', margin: '10px auto 0' }}>
+      4:00PM
+    </h3>
+    <h3 className="h3" style={{ width: '55%', margin: '10px auto 0 auto' }}>
       Crossline Community Church
     </h3>
     <h3 className="h3 h3--lighter" style={{ width: '55%', margin: '0 auto 40px' }}>
       23331 Moulton Pkwy, Laguna Hills, CA 92653
-    </h3>
-    <h3 className="h3" style={{ width: '55%', margin: '20px auto 0 auto' }}>
-      Wedding Ceremony & Reception
-    </h3>
-    <h3 className="h3 h3--lighter" style={{ width: '55%', margin: '0 auto' }}>
-      4:00PM
     </h3>
   </section>
 );
